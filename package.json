@@ -1,0 +1,21 @@
+{
+  "name": "codemonach-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "emailjs-com": "^2.6.4",
+    "next": "10.1.3",
+    "nprogress": "^0.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "typewriter-effect": "^2.17.0",
+    "webfontloader": "^1.6.28",
+    "wow.js": "^1.2.2"
+  }
+}

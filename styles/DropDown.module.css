@@ -1,0 +1,104 @@
+.dropdown {
+    display: none;
+    pointer-events: none;
+    position: sticky;
+    top: 20px;
+    margin-top: 0;
+    margin-left: 90%;
+    z-index: 5000;
+    transition: all 0.7s ease-in;
+}
+
+.menuIcon {
+    position: sticky;
+    top: 0;
+    max-height: 90px;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+    z-index: 5000;
+}
+
+.hideIcon {
+    display: none;
+    pointer-events: none;
+}
+
+.navList {
+    padding-top: 35px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px !important;
+    width: 100%;
+}
+
+.navItem {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.navItem a {
+    font-size: 19px;
+    font-family: 'Barlow', sans-serif;
+    padding-right: 100%;
+}
+
+.backIcon {
+    font-size: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+    .menuIcon {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 500;
+        cursor: pointer;
+    }
+    .dropdown {
+        display: block;
+        pointer-events: all;
+        min-height: 20px;
+    }
+    .navMenu {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100vw;
+        height: 250px;
+        background: inherit;
+        color: #fff;
+        top: -350px;
+        left: 0;
+        right: 0;
+        padding: 20px 5px;
+        transition: 0.5s;
+        z-index: 50;
+        backdrop-filter: blur(10px);
+        background: 5px solid rgba(27, 93, 236, 0.2);
+        border-radius: 0 0 20px 20px;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+    }
+    .navMenuActive {
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100vw;
+        height: 350px;
+        background: inherit;
+        color: #fff;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 20px 20px;
+        transition: 0.35s;
+        z-index: 50;
+        backdrop-filter: blur(10px);
+        background: 5px solid rgba(27, 93, 236, 0.2);
+        border-radius: 0 0 20px 20px;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+        overflow: hidden;
+    }
+}

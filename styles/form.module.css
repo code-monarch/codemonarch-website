@@ -1,0 +1,507 @@
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .formContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: #233661;
+        width: 371px;
+        margin: 0 auto 60px;
+        padding: 50px 30px;
+        border-radius: 30px;
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
+        border-left: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .formContainer h1 {
+        font-size: 36px;
+        font-family: "lato", sans-serif;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
+    .formContainer span {
+        color: #009BFF;
+        font-weight: 600;
+    }
+    
+    .formContainer p {
+        color: rgba(255, 255, 255, 0.418);
+        font-size: 1rem;
+        font-family: "barlow", sans-serif;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 8px;
+    }
+    
+    .form .formSelect {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        font-family: "barlow", sans-serif;
+        font-weight: 300;
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+    
+    .form .formSelect .checkbox {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    /* checkbox aspect */
+    
+    .checkbox input {
+        position: absolute;
+        top: -15px;
+        left: -26px;
+        height: 40px;
+        width: 73px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    .checkbox .check2 {
+        position: absolute;
+        top: -13px;
+        left: -24px;
+        height: 35px;
+        width: 96px;
+        opacity: 0;
+        cursor: pointer;
+    }
+    
+    .checkbox .customCheckbox {
+        position: absolute;
+        top: 3.5px;
+        left: -16px;
+        height: 12px;
+        width: 12px;
+        background-color: transparent;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+    }
+    
+    .checkbox input:checked~.customCheckbox {
+        background-color: whitesmoke;
+        border-radius: 50%;
+        -webkit-transform: rotate(0deg) scale(1);
+        -ms-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1);
+        opacity: 1;
+        border: 2px solid whitesmoke;
+    }
+    
+    .checkbox .customCheckbox::after {
+        position: absolute;
+        content: "";
+        top: -5px;
+        left: 2px;
+        height: 0px;
+        width: 0px;
+        border-radius: 50%;
+        border: solid #009BFF;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(0deg) scale(0);
+        -ms-transform: rotate(0deg) scale(0);
+        transform: rotate(0deg) scale(0);
+        opacity: 0;
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+    }
+    
+    .checkbox input:checked~.customCheckbox::after {
+        background-color: transparent;
+        top: -1px;
+        left: 2px;
+        width: 3px;
+        height: 6px;
+        border: solid #009BFF;
+        border-width: 0 2px 2px 0;
+        border-radius: 50%;
+        opacity: 1;
+        transform: rotate(43deg) scale(1);
+        -webkit-transform: rotate(43deg) scale(1);
+        -ms-transform: rotate(43deg) scale(1);
+    }
+    /* For Ripple Effect */
+    
+    .checkbox .customCheckbox::before {
+        position: absolute;
+        content: "";
+        left: 10px;
+        top: 10px;
+        width: 0px;
+        height: 0px;
+        border: 2px solid whitesmoke;
+        border-radius: 50%;
+        transform: scale(0);
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+    }
+    
+    .checkbox input:checked~.customCheckbox::before {
+        left: -3px;
+        top: -3px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        opacity: 0;
+        z-index: 999;
+        transform: scale(3);
+        -ms-transform: scale(3);
+        -webkit-transform: scale(3);
+        transition: all 0.3s ease-out;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+    }
+    
+    .formInput div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formInput label {
+        font-size: 0.9rem;
+        font-family: "barlow", sans-serif;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+    
+    .formInput input {
+        color: whitesmoke;
+        font-family: "barlow", sans-serif;
+        font-weight: 300;
+        background-color: transparent;
+        width: 100%;
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.541);
+        outline: none;
+    }
+    
+    .formInput .field {
+        color: whitesmoke;
+        background-color: transparent;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;
+        width: 100%;
+        height: 122px;
+        margin: 10px 0 20px;
+        padding: 10px;
+        border: 2px solid rgba(255, 255, 255, 0.541);
+        border-radius: 10px;
+        outline: none;
+        resize: none;
+        overflow: hidden;
+    }
+    
+    .formSubmit {
+        color: whitesmoke;
+        font-size: 1rem;
+        font-family: "lato", sans-serif;
+        font-weight: 300;
+        background-color: #2D457E;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 12px 15px;
+        margin-bottom: 0px;
+        border-radius: 30px;
+        cursor: pointer;
+        animation: bounce 3s infinite;
+        -moz-animation: bounce 3s infinite;
+        -webkit-animation: bounce 3s infinite;
+    }
+    
+    @-webkit-keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        60% {
+            -moz-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+        }
+    }
+    
+    @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+            -moz-transform: translateY(0);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+        }
+        60% {
+            -moz-transform: translateY(-2px);
+            -ms-transform: translateY(-2px);
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+        }
+    }
+    /* MOBILE */
+    
+    @media only screen and (max-width: 480px) {
+        .container {
+            padding: 0;
+            width: 100%;
+        }
+        .formContainer {
+            display: flex;
+            flex-direction: column;
+            background-color: #233661;
+            width: 97%;
+            margin: 0 auto 60px;
+            padding: 50px 30px;
+            border-radius: 30px;
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            border-left: 2px solid rgba(255, 255, 255, 0.2);
+        }
+        .formContainer h1 {
+            font-size: 36px;
+            font-family: "lato", sans-serif;
+            font-weight: 600;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .formContainer span {
+            color: #009BFF;
+            font-family: "lato", sans-serif;
+            font-weight: 600;
+        }
+        .formContainer p {
+            color: rgba(255, 255, 255, 0.514);
+            font-family: "barlow", sans-serif;
+            font-weight: 300;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        .form .formSelect {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            font-family: "barlow", sans-serif;
+            font-weight: 300;
+            margin-bottom: 30px;
+            padding-left: 15px;
+        }
+        .form .formSelect .checkbox {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        /* checkbox aspect */
+        .checkbox input {
+            position: absolute;
+            top: -15px;
+            left: -26px;
+            height: 40px;
+            width: 73px;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 3;
+        }
+        .checkbox .check2 {
+            position: absolute;
+            top: -15px;
+            left: -24px;
+            height: 40px;
+            width: 100px;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .checkbox .customCheckbox {
+            background-color: transparent;
+            position: absolute;
+            top: 4px;
+            left: -16px;
+            height: 12px;
+            width: 12px;
+            border: 2px solid whitesmoke;
+            border-radius: 50%;
+            transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+        .checkbox input:checked~.customCheckbox {
+            background-color: whitesmoke;
+            border: 2px solid whitesmoke;
+            border-radius: 50%;
+            opacity: 1;
+            transform: rotate(0deg) scale(1);
+            -webkit-transform: rotate(0deg) scale(1);
+            -ms-transform: rotate(0deg) scale(1);
+        }
+        .checkbox .customCheckbox::after {
+            position: absolute;
+            content: "";
+            top: -5px;
+            left: 2px;
+            height: 0px;
+            width: 0px;
+            border-radius: 2px;
+            border: solid #009BFF;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(0deg) scale(0);
+            -ms-transform: rotate(0deg) scale(0);
+            transform: rotate(0deg) scale(0);
+            opacity: 0;
+            transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+        .checkbox input:checked~.customCheckbox::after {
+            background-color: transparent;
+            top: -1px;
+            left: 2px;
+            width: 3px;
+            height: 6px;
+            border: solid #009BFF;
+            border-width: 0 2px 2px 0;
+            border-radius: 0;
+            opacity: 1;
+            transform: rotate(43deg) scale(1);
+            -webkit-transform: rotate(43deg) scale(1);
+            -ms-transform: rotate(43deg) scale(1);
+        }
+        /* For Ripple Effect */
+        .checkbox .customCheckbox::before {
+            position: absolute;
+            content: "";
+            left: 10px;
+            top: 10px;
+            width: 0px;
+            height: 0px;
+            border-radius: 50%;
+            border: 2px solid whitesmoke;
+            -webkit-transform: scale(0);
+            -ms-transform: scale(0);
+            transform: scale(0);
+        }
+        .checkbox input:checked~.customCheckbox::before {
+            left: -3px;
+            top: -3px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            opacity: 0;
+            z-index: 999;
+            transform: scale(3);
+            -webkit-transform: scale(3);
+            -ms-transform: scale(3);
+            transition: all 0.3s ease-out;
+            -webkit-transition: all 0.3s ease-out;
+            -moz-transition: all 0.3s ease-out;
+            -ms-transition: all 0.3s ease-out;
+            -o-transition: all 0.3s ease-out;
+        }
+        .formInput div {
+            display: flex;
+            flex-direction: column;
+        }
+        .formInput label {
+            font-family: "barlow", sans-serif;
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+        .formInput input {
+            color: whitesmoke;
+            background-color: transparent;
+            font-family: "barlow", sans-serif;
+            font-weight: 300;
+            width: 100%;
+            margin-bottom: 25px;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.541);
+            outline: none;
+        }
+        .formInput .field {
+            color: whitesmoke;
+            background-color: transparent;
+            font-family: 'Barlow', sans-serif;
+            font-weight: 300;
+            width: 100%;
+            height: 140px;
+            margin: 10px 0 30px;
+            padding: 10px 10px;
+            border: 2px solid rgba(255, 255, 255, 0.541);
+            border-radius: 10px;
+            outline: none;
+            resize: none;
+            overflow: hidden;
+        }
+        .formSubmit {
+            color: whitesmoke;
+            font-size: 1rem;
+            font-family: "lato", sans-serif;
+            font-weight: 300;
+            background-color: #2D457E;
+            width: 100%;
+            margin-bottom: 0px;
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.418);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+        }
+    }
+    
+    @media only screen and (max-width: 320px) {
+        .form .formSelect {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            font-family: "lato", sans-serif;
+            font-weight: 300;
+            margin-bottom: 30px;
+            padding-left: 15px;
+        }
+    }

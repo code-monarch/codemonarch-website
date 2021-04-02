@@ -1,0 +1,50 @@
+.contactSection {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text h3 {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.text p {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 576px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 480px) {
+    .text p {
+        font-size: 1rem;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 300;
+        max-width: 300px;
+        line-height: 1.5;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
