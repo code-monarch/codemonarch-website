@@ -1,5 +1,5 @@
 .container {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,78 +61,6 @@
     background: rgba(153, 27, 56, 0.7);
     color: rgb(223, 219, 219);
     transform: scaleY(20px);
-}
-
-.modalWrapper {
-    position: absolute;
-    background-color: #1a202c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 500px; */
-    padding: 80px 20px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    transition: all 0.04s cubic-bezier(.17, .67, .83, .67);
-    z-index: 10000;
-}
-
-.modalClosed {
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.modalWrapper div {
-    margin: 10px 30px;
-}
-
-.modalWrapper .close {
-    position: absolute;
-    font-size: 35px;
-    top: 7px;
-    right: 0px;
-    cursor: pointer;
-}
-
-.modalWrapper .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background: #991b38;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-    /* border-radius: 3px */
-    cursor: pointer;
-    text-align: center;
-    font-family: 'Barlow', sans-serif;
-    transition: all 0.1s ease-in-out;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
-}
-
-
-/* 
-.modalWrapper .phoneNumber .icon {} */
-
-
-/* .modalWrapper .message {} */
-
-.modalWrapper .icon {
-    width: 27px;
-    margin-right: 3px;
-}
-
-
-/* .modalWrapper .message {} */
-
-.flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: space-between;
 }
 
 @media only screen and (max-width: 480px) {

@@ -1,47 +1,116 @@
-/* .popup-content {
-    margin: auto;
-    background: rgb(255, 255, 255);
-    width: 50%;
-    padding: 5px;
+.modalWrapper {
+    position: fixed;
+    top: 50vh;
+    right: 50vw;
+    transform: translate(50%, -50%);
+    background-color: #1a202c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 500px; */
+    padding: 80px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.04s cubic-bezier(.17, .67, .83, .67);
+    z-index: 10000;
 }
 
-.popup-arrow {
-    color: rgb(255, 255, 255);
+.modalClosed {
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
 }
 
-[role='tooltip'].popup-content {
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+.modalWrapper div {
+    margin: 10px 30px;
 }
 
-.popup-overlay {
-    background: rgba(0, 0, 0, 0.5);
+.modalWrapper .close {
+    position: absolute;
+    font-size: 35px;
+    top: 7px;
+    right: 0px;
+    cursor: pointer;
 }
 
-[data-popup='tooltip'].popup-overlay {
-    background: transparent;
-} */
-
-.my-popup-content {
-    margin: auto;
-    background: rgb(255, 255, 255);
-    width: 50%;
-    padding: 5px;
+.modalWrapper .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #991b38;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    /* border-radius: 3px */
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
 }
 
-.my-popup-arrow {
-    color: rgb(255, 255, 255);
+.modalWrapper .icon {
+    width: 27px;
+    margin-right: 3px;
 }
 
-[role='tooltip'].my-popup-content {
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
 }
 
-.my-popup-overlay {
-    background: rgba(0, 0, 0, 0.5);
+@media only screen and (max-width: 520px) {
+    .modalWrapper {
+        width: 300px;
+    }
+    .modalWrapper .close {
+        position: absolute;
+        font-size: 30px;
+        top: 7px;
+        right: 0px;
+        cursor: pointer;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: space-between;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .modalWrapper .buttons {
+        padding: 8px 10px;
+        margin: 10px 0;
+    }
+    .modalWrapper .icon {
+        width: 27px;
+        margin-right: 3px;
+    }
 }
 
-[data-popup='tooltip'].my-popup-overlay {
-    background: transparent;
+@media only screen and (max-width: 380px) {
+    .modalWrapper {
+        width: 250px;
+    }
 }
+
+
+/* @media only screen and (max-width: 600px) {
+        .flex {
+            display: flex;
+            flex-direction: column;
+             justify-content: center;
+
+align-items: space-between;
+margin-left: 0!important;
+margin-right: 0!important;
+}
+ .modalWrapper {
+    width: 400px;
+} 
+}
+*/

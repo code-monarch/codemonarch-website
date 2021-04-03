@@ -1,13 +1,13 @@
 import React from 'react'
+import styles from "../styles/Footer.module.css"
 
 const Footer = () => {
     return (
-			<div>
-				{/* FREEPIK ATTRIBUTE LINK */}
-				<a href='https://www.freepik.com/vectors/mobile'>
-					Mobile vector created by stories - www.freepik.com
-				</a>
-			</div>
+			<>
+				<div className={styles.container}>
+					<h5> Codemonarch 2019-2021</h5>
+				</div>
+			</>
 		);
 }
 

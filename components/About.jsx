@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Link from "next/link";
+
 
 import styles from "../styles/About.module.css";
 // import Modal from "./Modal"
@@ -7,7 +7,7 @@ import styles from "../styles/About.module.css";
 const isServer = typeof window === "undefined";
 const WOW = !isServer ? require("wow.js") : null;
 
-const About = ({openModal, toggleModal, hideConsultBtn}) => {
+const About = ({toggleModal}) => {
 	// instantiate wow js
 	useEffect(() => {
 		new WOW().init();
@@ -31,37 +31,12 @@ const About = ({openModal, toggleModal, hideConsultBtn}) => {
 				</p>
 
 				<span
-					className={hideConsultBtn ? styles.hideConsult : styles.consult}
+					className={styles.consult}
 					onClick={toggleModal}>
 					Get free consultation
 				</span>
 			</div>
 			{/* <Modal toggleModal={toggleModal} /> */}
-			<div className={openModal ? styles.modalWrapper : styles.modalClosed}>
-				<div className={styles.flex}>
-					{/*  Call */}
-					<div className={`${styles.phoneNumber} ${styles.buttons}`}>
-						<img className={styles.icon} src='/phone.png' alt='call us' />
-						<a href='tel:+2349036075477'>Call</a>
-					</div>
-
-					<div
-						onClick={toggleModal}
-						className={`${styles.message} ${styles.buttons}`}>
-						<img
-							className={styles.icon}
-							src='/message.png'
-							alt='send us a message'
-						/>
-						<Link href='/#contact'>
-							<a>Send us a message</a>
-						</Link>
-					</div>
-					<div onClick={toggleModal} className={styles.close}>
-						&times;
-					</div>
-				</div>
-			</div>
 		</div>
 	);
 };

@@ -6,6 +6,7 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Services from "../components/Services";
 import DropDown from "../components/DropDown";
+import Modal from "../components/Modal";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -42,12 +43,12 @@ export default function Home() {
 
 	// State for Modal
 	const [openModal, setOpenModal] = useState(false);
-	const [hideConsultBtn, setHideConsultBtn] = useState(false);
+	// const [hideConsultBtn, setHideConsultBtn] = useState(false);
 
 	// Function to handle Modal control
 	const toggleModal = () => {
 		setOpenModal(!openModal);
-		setHideConsultBtn(!hideConsultBtn);
+		// setHideConsultBtn(!hideConsultBtn);
 	};
 	return (
 		<div onClick={clearScreen}>
@@ -69,21 +70,22 @@ export default function Home() {
 					content='http://codemonarch.com/codemonarch.jpg'
 				/>
 				// FACEBOOK OG TAGS END
-			</Head>
+			</Head>{" "}
 			<Banner />
 			<DropDown
 				toggleDropdown={toggleDropdown}
 				dropMenuVisibility={dropMenuVisibility}
 				hideMenuIcon={hideMenuIcon}
-			/>
+			/>{" "}
 			<Navigation />
 			<About
 				openModal={openModal}
 				toggleModal={toggleModal}
-				hideConsultBtn={hideConsultBtn}
+				// hideConsultBtn={hideConsultBtn}
 			/>
 			<Services />
 			<Contact />
+			<Modal openModal={openModal} toggleModal={toggleModal} />
 			<Footer />
 		</div>
 	);
