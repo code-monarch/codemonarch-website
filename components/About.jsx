@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 
-import styles from "../styles/About.module.css";
+import styles from "../styles/about.module.css";
 // import Modal from "./Modal"
 
 const isServer = typeof window === "undefined";

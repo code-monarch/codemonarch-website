@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
-import styles from "../styles/Services.module.css";
+import styles from "../styles/services.module.css";
 // import Image from "next/image";
 // import Skeleton from "react-loading-skeleton";
 
