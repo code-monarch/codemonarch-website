@@ -82,11 +82,10 @@ export default function Home() {
 				openModal={openModal}
 				toggleModal={toggleModal}
 				// hideConsultBtn={hideConsultBtn}
-			/>
+			/>{" "}
 			<Services />
 			<Contact />
-			<Modal openModal={openModal} toggleModal={toggleModal} />
-			<Footer />
+			<Modal openModal={openModal} toggleModal={toggleModal} /> <Footer />
 		</div>
 	);
 }
