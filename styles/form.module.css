@@ -21,7 +21,7 @@
         border-left: 2px solid rgba(255, 255, 255, 0.2);
     }
     
-    .formContainer .h1 {
+    .h1 {
         font-size: 36px;
         font-family: "lato", sans-serif;
         font-weight: 600;
@@ -29,12 +29,12 @@
         margin-bottom: 20px;
     }
     
-    .formContainer .span {
+    .span {
         color: #009BFF;
         font-weight: 600;
     }
     
-    .formContainer .p {
+    .p {
         color: rgba(255, 255, 255, 0.418);
         font-size: 1rem;
         font-family: "barlow", sans-serif;
@@ -43,7 +43,7 @@
         margin-bottom: 8px;
     }
     
-    .form .formSelect {
+    .formSelect {
         display: flex;
         justify-content: space-between;
         font-size: 15px;
@@ -53,14 +53,14 @@
         padding-left: 15px;
     }
     
-    .form .formSelect .checkbox {
+    .checkbox {
         position: relative;
         display: flex;
         align-items: center;
     }
     /* checkbox aspect */
     
-    .checkbox .input {
+    .input {
         position: absolute;
         top: -15px;
         left: -26px;
@@ -71,7 +71,7 @@
         z-index: 3;
     }
     
-    .checkbox .check2 {
+    .check2 {
         position: absolute;
         top: -13px;
         left: -24px;
@@ -81,7 +81,7 @@
         cursor: pointer;
     }
     
-    .checkbox .customCheckbox {
+    .customCheckbox {
         position: absolute;
         top: 3.5px;
         left: -16px;
@@ -97,7 +97,7 @@
         -o-transition: all 0.3s ease-out;
     }
     
-    .checkbox .input:checked~.customCheckbox {
+    .input:checked~.customCheckbox {
         background-color: whitesmoke;
         border-radius: 50%;
         -webkit-transform: rotate(0deg) scale(1);
@@ -107,7 +107,7 @@
         border: 2px solid whitesmoke;
     }
     
-    .checkbox .customCheckbox::after {
+    .customCheckbox::after {
         position: absolute;
         content: "";
         top: -5px;
@@ -128,7 +128,7 @@
         -o-transition: all 0.3s ease-out;
     }
     
-    .checkbox .input:checked~.customCheckbox::after {
+    .input:checked~.customCheckbox::after {
         background-color: transparent;
         top: -1px;
         left: 2px;
@@ -144,7 +144,7 @@
     }
     /* For Ripple Effect */
     
-    .checkbox .customCheckbox::before {
+    .customCheckbox::before {
         position: absolute;
         content: "";
         left: 10px;
@@ -158,7 +158,7 @@
         -ms-transform: scale(0);
     }
     
-    .checkbox .input:checked~.customCheckbox::before {
+    .input:checked~.customCheckbox::before {
         left: -3px;
         top: -3px;
         width: 13px;
@@ -176,19 +176,19 @@
         -o-transition: all 0.3s ease-out;
     }
     
-    .formInput .div {
+    .div {
         display: flex;
         flex-direction: column;
     }
     
-    .formInput .label {
+    .label {
         font-size: 0.9rem;
         font-family: "barlow", sans-serif;
         font-weight: 300;
         margin-bottom: 5px;
     }
     
-    .formInput .formInput {
+    .formInput {
         color: whitesmoke;
         font-family: "barlow", sans-serif;
         font-weight: 300;
@@ -200,7 +200,7 @@
         outline: none;
     }
     
-    .formInput .field {
+    .field {
         color: whitesmoke;
         background-color: transparent;
         font-family: 'Barlow', sans-serif;
@@ -301,26 +301,26 @@
             border-top: 2px solid rgba(255, 255, 255, 0.2);
             border-left: 2px solid rgba(255, 255, 255, 0.2);
         }
-        .formContainer .h1 {
+        .h1 {
             font-size: 36px;
             font-family: "lato", sans-serif;
             font-weight: 600;
             margin: 0;
             margin-bottom: 20px;
         }
-        .formContainer .span {
+        .span {
             color: #009BFF;
             font-family: "lato", sans-serif;
             font-weight: 600;
         }
-        .formContainer .p {
+        .p {
             color: rgba(255, 255, 255, 0.514);
             font-family: "barlow", sans-serif;
             font-weight: 300;
             margin: 0;
             margin-bottom: 10px;
         }
-        .form .formSelect {
+        .formSelect {
             display: flex;
             justify-content: space-between;
             font-size: 14.5px;
@@ -329,13 +329,13 @@
             margin-bottom: 30px;
             padding-left: 15px;
         }
-        .form .formSelect .checkbox {
+        .checkbox {
             position: relative;
             display: flex;
             align-items: center;
         }
         /* checkbox aspect */
-        .checkbox .input {
+        .input {
             position: absolute;
             top: -15px;
             left: -26px;
@@ -345,7 +345,7 @@
             cursor: pointer;
             z-index: 3;
         }
-        .checkbox .check2 {
+        .check2 {
             position: absolute;
             top: -15px;
             left: -24px;
@@ -354,7 +354,7 @@
             opacity: 0;
             cursor: pointer;
         }
-        .checkbox .customCheckbox {
+        .customCheckbox {
             background-color: transparent;
             position: absolute;
             top: 4px;
@@ -369,7 +369,7 @@
             -ms-transition: all 0.3s ease-out;
             -o-transition: all 0.3s ease-out;
         }
-        .checkbox .input:checked~.customCheckbox {
+        .input:checked~.customCheckbox {
             background-color: whitesmoke;
             border: 2px solid whitesmoke;
             border-radius: 50%;
@@ -378,7 +378,7 @@
             -webkit-transform: rotate(0deg) scale(1);
             -ms-transform: rotate(0deg) scale(1);
         }
-        .checkbox .customCheckbox::after {
+        .customCheckbox::after {
             position: absolute;
             content: "";
             top: -5px;
@@ -398,7 +398,7 @@
             -ms-transition: all 0.3s ease-out;
             -o-transition: all 0.3s ease-out;
         }
-        .checkbox .input:checked~.customCheckbox::after {
+        .input:checked~.customCheckbox::after {
             background-color: transparent;
             top: -1px;
             left: 2px;
@@ -413,7 +413,7 @@
             -ms-transform: rotate(43deg) scale(1);
         }
         /* For Ripple Effect */
-        .checkbox .customCheckbox::before {
+        .customCheckbox::before {
             position: absolute;
             content: "";
             left: 10px;
@@ -443,17 +443,17 @@
             -ms-transition: all 0.3s ease-out;
             -o-transition: all 0.3s ease-out;
         }
-        .formInput .div {
+        .div {
             display: flex;
             flex-direction: column;
         }
-        .formInput .label {
+        .label {
             font-family: "barlow", sans-serif;
             font-size: 0.9rem;
             font-weight: 300;
             margin-bottom: 8px;
         }
-        .formInput .formInput {
+        .formInput {
             color: whitesmoke;
             background-color: transparent;
             font-family: "barlow", sans-serif;
@@ -464,7 +464,7 @@
             border-bottom: 2px solid rgba(255, 255, 255, 0.541);
             outline: none;
         }
-        .formInput .field {
+        .field {
             color: whitesmoke;
             background-color: transparent;
             font-family: 'Barlow', sans-serif;
@@ -495,7 +495,7 @@
     }
     
     @media only screen and (max-width: 320px) {
-        .form .formSelect {
+        .formSelect {
             display: flex;
             justify-content: space-between;
             font-size: 12px;

@@ -22,11 +22,11 @@
     pointer-events: none;
 }
 
-.modalWrapper .flex {
+.flex {
     margin: 10px 30px;
 }
 
-.modalWrapper .close {
+.close {
     position: absolute;
     font-size: 35px;
     top: 7px;
@@ -34,7 +34,7 @@
     cursor: pointer;
 }
 
-.modalWrapper .buttons {
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
     border-radius: 30px;
 }
 
-.modalWrapper .icon {
+.icon {
     width: 27px;
     margin-right: 3px;
 }
@@ -67,7 +67,7 @@
     .modalWrapper {
         width: 300px;
     }
-    .modalWrapper .close {
+    .close {
         position: absolute;
         font-size: 30px;
         top: 7px;
@@ -82,11 +82,11 @@
         margin-left: 0!important;
         margin-right: 0!important;
     }
-    .modalWrapper .buttons {
+    .buttons {
         padding: 8px 10px;
         margin: 10px 0;
     }
-    .modalWrapper .icon {
+    .icon {
         width: 27px;
         margin-right: 3px;
     }
