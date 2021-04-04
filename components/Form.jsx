@@ -1,4 +1,4 @@
-import styles from "../styles/form.module.css";
+import styles from "@/styles/form.module.css";
 import emailjs from "emailjs-com";
 
 import React, {useEffect} from "react"

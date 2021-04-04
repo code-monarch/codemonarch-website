@@ -1,6 +1,6 @@
 import Link from "next/link";
 // import React, { useState } from "react";
-import styles from "../styles/dropdown.module.css";
+import styles from "@/styles/dropdown.module.css";
 
 const dropDown = ({ toggleDropdown, dropMenuVisibility, hideMenuIcon }) => {
 	return (

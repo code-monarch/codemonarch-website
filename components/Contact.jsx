@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "../styles/contact.module.css";
+import styles from "@/styles/contact.module.css";
 import Form from "./Form";
 
 

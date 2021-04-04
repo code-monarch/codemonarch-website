@@ -1,13 +1,13 @@
 import Head from "next/head";
 import React, { useState } from "react";
-import Banner from "../components/Banner";
-import Navigation from "../components/Navigation";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Services from "../components/Services";
-import DropDown from "../components/DropDown";
-import Modal from "../components/Modal";
-import Footer from "../components/Footer";
+import Banner from "@/components/Banner";
+import Navigation from "@/components/Navigation";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Services from "@/components/Services";
+import DropDown from "@/components/DropDown";
+import Modal from "@/components/Modal";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 	// State for Dropdown menu
