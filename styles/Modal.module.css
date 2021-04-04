@@ -22,7 +22,7 @@
     pointer-events: none;
 }
 
-.modalWrapper div {
+.modalWrapper .flex {
     margin: 10px 30px;
 }
 

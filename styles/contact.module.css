@@ -17,12 +17,12 @@
     margin-right: auto;
 }
 
-.text h3 {
+.text .h3 {
     font-size: 36px;
     margin-bottom: 0;
 }
 
-.text p {
+.text .p {
     color: whitesmoke;
     font-size: 1rem;
     font-family: "lato", sans-serif;
@@ -38,7 +38,7 @@
 /* MEDIA QUERIES  */
 
 @media only screen and (max-width: 480px) {
-    .text p {
+    .text .p {
         font-size: 1rem;
         font-family: 'Barlow', sans-serif;
         font-weight: 300;

@@ -172,7 +172,7 @@
     transition: 0.5s;
 }
 
-.row .card h2 {
+.row .card .h2 {
     position: absolute !important;
     top: -120px;
     right: 20px;
@@ -183,13 +183,13 @@
     transition: 0.5s;
 }
 
-.row .card:hover .content h2 {
+.row .card:hover .content .h2 {
     /* giving the h2 a translational hover effect */
     top: -145px;
     cursor: pointer;
 }
 
-.row .card .content h3 {
+.row .card .content .h3 {
     color: white;
     font-family: 'Barlow', sans-serif;
     font-size: 24px;
@@ -198,7 +198,7 @@
     z-index: 1;
 }
 
-.row .card .content p {
+.row .card .content .p {
     color: rgb(250, 241, 241);
     font-family: 'lato', sans-serif;
     font-size: 14px;
@@ -209,7 +209,7 @@
     margin-bottom: 10px;
 }
 
-.row .card a {
+.row .card .a {
     display: inline-block;
     color: #fff;
     background: rgba(255, 255, 255, 0.09);
@@ -223,11 +223,12 @@
     transition: all 0.1s ease-in-out;
 }
 
-.row .card span:hover {
+
+/* .row .card span:hover {
     background: rgba(124, 123, 123, 0.09);
     color: rgb(223, 219, 219);
     transform: scaleY(20px);
-}
+} */
 
 @media only screen and (max-width: 480px) {
     .row .card {

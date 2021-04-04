@@ -39,10 +39,10 @@ useEffect(() => {
 				<div className={`${styles.formContainer} ${"wow fadeInLeft"}`}>
 					{/* FORM TITLE */}
 					<div className={styles.formTitle}>
-						<h1>
-							Get a <span>Quote</span>
+						<h1 className={styles.h1}>
+							Get a <span className={styles.span}>Quote</span>
 						</h1>
-						<p>What can we do for you?</p>
+						<p className={styles.p}>What can we do for you?</p>
 					</div>
 					{/* FORM */}
 					<form className={styles.form} onSubmit={sendEmail}>
@@ -50,6 +50,7 @@ useEffect(() => {
 						<div className={styles.formSelect}>
 							<div className={styles.checkbox}>
 								<input
+									className={styles.input}
 									type='checkbox'
 									id='design'
 									name='design'
@@ -88,9 +89,12 @@ useEffect(() => {
 						{/* SERVICE OPTIONS END */}
 						{/* FORM INPUT */}
 						<div className={styles.formInput}>
-							<div>
-								<label htmlFor='name'>Full Name</label>
+							<div className={styles.div}>
+								<label className={styles.label} htmlFor='name'>
+									Full Name
+								</label>
 								<input
+									className={styles.formInput}
 									type='text'
 									name='name'
 									className={styles.input}

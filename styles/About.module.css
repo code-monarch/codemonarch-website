@@ -17,14 +17,14 @@
     padding: 40px 30px;
 }
 
-.AboutTitle h3 {
+.AboutTitle .h3 {
     color: whitesmoke;
     font-size: 35px;
     font-family: 'Barlow', sans-serif;
     margin-bottom: 0;
 }
 
-.AboutTitle p {
+.AboutTitle .p {
     color: whitesmoke;
     font-size: 1rem;
     font-family: 'lato', sans-serif;
@@ -57,7 +57,7 @@
     pointer-events: none;
 }
 
-.AboutTitle span:hover {
+.AboutTitle .consult:hover {
     background: rgba(153, 27, 56, 0.7);
     color: rgb(223, 219, 219);
     transform: scaleY(20px);

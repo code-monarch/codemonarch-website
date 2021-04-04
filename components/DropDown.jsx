@@ -14,7 +14,9 @@ const dropDown = ({ toggleDropdown, dropMenuVisibility, hideMenuIcon }) => {
 				<ul className={styles.navList}>
 					<li className={styles.navItem}>
 						<Link href='/#home'>
-							<a onClick={toggleDropdown}>Home</a>
+							<a className={styles.a} onClick={toggleDropdown}>
+								Home
+							</a>
 						</Link>
 					</li>
 					<li className={styles.navItem}>
@@ -39,9 +41,7 @@ const dropDown = ({ toggleDropdown, dropMenuVisibility, hideMenuIcon }) => {
 					</li>
 				</ul>
 				{/* EXIT ICON */}
-				<span className={styles.backIcon}>
-					&times;
-				</span>
+				<span className={styles.backIcon}>&times;</span>
 			</nav>
 		</div>
 	);
