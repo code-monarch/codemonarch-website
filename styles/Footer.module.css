@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    font-family: "Lato", sans-serif;
     background: #1d2431;
     justify-content: center;
     align-items: center;

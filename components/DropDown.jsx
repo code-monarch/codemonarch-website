@@ -21,22 +21,30 @@ const dropDown = ({ toggleDropdown, dropMenuVisibility, hideMenuIcon }) => {
 					</li>
 					<li className={styles.navItem}>
 						<Link href='/#about'>
-							<a onClick={toggleDropdown}>About</a>
+							<a className={styles.a} onClick={toggleDropdown}>
+								About
+							</a>
 						</Link>
 					</li>
 					<li className={styles.navItem}>
 						<Link href='/#services'>
-							<a onClick={toggleDropdown}>Services</a>
+							<a className={styles.a} onClick={toggleDropdown}>
+								Services
+							</a>
 						</Link>
 					</li>
 					<li className={styles.navItem}>
 						<Link href='/#contact'>
-							<a onClick={toggleDropdown}>Contact</a>
+							<a className={styles.a} onClick={toggleDropdown}>
+								Contact
+							</a>
 						</Link>
 					</li>
 					<li className={styles.navItem}>
 						<Link href='/blog'>
-							<a onClick={toggleDropdown}>Blog</a>
+							<a className={styles.a} onClick={toggleDropdown}>
+								Blog
+							</a>
 						</Link>
 					</li>
 				</ul>

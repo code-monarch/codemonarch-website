@@ -72,6 +72,7 @@ useEffect(() => {
 							</div>
 							<div className={styles.checkbox}>
 								<input
+									className={styles.input}
 									type='checkbox'
 									id='website'
 									name='website'
@@ -81,14 +82,20 @@ useEffect(() => {
 								<label htmlFor='website'>website</label>
 							</div>
 							<div className={styles.checkbox}>
-								<input type='checkbox' id='other' name='other' value='other' />
+								<input
+									className={styles.input}
+									type='checkbox'
+									id='other'
+									name='other'
+									value='other'
+								/>
 								<span className={styles.customCheckbox}></span>
 								<label htmlFor='other'>other</label>
 							</div>
 						</div>
 						{/* SERVICE OPTIONS END */}
 						{/* FORM INPUT */}
-						<div className={styles.formInput}>
+						<div className={styles.div}>
 							<div className={styles.div}>
 								<label className={styles.label} htmlFor='name'>
 									Full Name
@@ -97,31 +104,36 @@ useEffect(() => {
 									className={styles.formInput}
 									type='text'
 									name='name'
-									className={styles.input}
 									required
 								/>
 							</div>
-							<div>
-								<label htmlFor='email'>Email</label>
+							<div className={styles.div}>
+								<label className={styles.label} htmlFor='email'>
+									Email
+								</label>
 								<input
 									type='email'
 									name='email'
-									className={styles.input}
+									className={styles.formInput}
 									required
 								/>
 							</div>
-							<div>
-								<label htmlFor='number'>Phone Number</label>
+							<div className={styles.div}>
+								<label className={styles.label} htmlFor='number'>
+									Phone Number
+								</label>
 								<input
 									type='tel'
 									name='number'
 									pattern='[0-9]{4}-[0-9]{3}-[0-9]{3}'
-									className={styles.input}
+									className={styles.formInput}
 									required
 								/>
 							</div>
-							<div>
-								<label htmlFor='email'>Project Description</label>
+							<div className={styles.div}>
+								<label className={styles.label} htmlFor='email'>
+									Project Description
+								</label>
 								<textarea name='message' className={styles.field} required />
 							</div>
 						</div>
