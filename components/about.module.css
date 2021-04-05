@@ -135,9 +135,16 @@
     align-items: space-between;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
     .AboutTitle {
         min-height: 200px;
         padding-top: 0;
+    }
+    .close {
+        position: absolute;
+        font-size: 35px;
+        top: 7px;
+        right: 10px;
+        cursor: pointer;
     }
 }
