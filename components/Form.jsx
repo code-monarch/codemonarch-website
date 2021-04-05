@@ -61,7 +61,7 @@ useEffect(() => {
 							</div>
 							<div className={styles.checkbox}>
 								<input
-									className={styles.check2}
+									className={`${styles.check2}${styles.input}`}
 									type='checkbox'
 									id='development'
 									name='development'
