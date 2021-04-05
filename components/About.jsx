@@ -20,8 +20,8 @@ const About = ({toggleModal}) => {
 				<p className={styles.p}>
 					We're a group of experienced developers and designers skilled in
 					building / designing proven software solutions that boosts businesses
-					and promote organizational sustainability. We help in taking an
-					<b> idea </b>
+					and promote organizational sustainability. We help in taking
+					<b> ideas </b>
 					from conception to <b> production </b>and improve sales by engaging
 					more clients in your space.
 					<br />

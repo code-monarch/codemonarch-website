@@ -68,7 +68,7 @@
         width: 73px;
         opacity: 0;
         cursor: pointer;
-        z-index: 3;
+        z-index: 5;
     }
     
     .check2 {
@@ -78,6 +78,7 @@
         height: 35px;
         width: 96px;
         opacity: 0;
+        z-index: 5;
         cursor: pointer;
     }
     
@@ -488,8 +489,7 @@
             width: 100%;
             margin-bottom: 0px;
             padding: 12px 15px;
-            border: 1px solid rgba(255, 255, 255, 0.418);
-            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            /* border: 1px solid rgba(255, 255, 255, 0.418); */
             border-radius: 30px;
         }
     }

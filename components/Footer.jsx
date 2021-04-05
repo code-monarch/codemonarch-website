@@ -4,7 +4,7 @@ const Footer = () => {
     return (
 			<>
 				<div className={styles.container}>
-					<h5>Copywrite Codemonarch 2019-2021</h5>
+					<h5>&copy; Codemonarch 2019-2021</h5>
 				</div>
 			</>
 		);
