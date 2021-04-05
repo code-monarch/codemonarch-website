@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import styles from "../styles/contact.module.css";
-import Form from "./Form";
+import styles from "@/components/contact.module.css";
+import Form from "@/components/Form";
 
 
 const isServer = typeof window === "undefined";

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-import styles from "../styles/modal.module.css";
+import styles from "@/components/modal.module.css";
 
 const Modal = ({openModal, toggleModal}) => {
     return (
