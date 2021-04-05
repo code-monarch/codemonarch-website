@@ -46,7 +46,8 @@
     overflow: -moz-hidden-unscrollable;
 }
 
-.row .card::after {
+
+/* .row .card::after {
     content: ' ';
     position: absolute;
     top: 0;
@@ -73,11 +74,20 @@
     animation: change 3s ease infinite;
     -webkit-animation: change 3s ease infinite;
     /* Safari 4+ */
-    -moz-animation: change 3s ease infinite;
-    /* Fx 5+ */
-    -o-animation: change 3s ease infinite;
-}
 
+
+/* -moz-animation: change 3s ease infinite; */
+
+
+/* Fx 5+ 
+
+-o-animation: change 3s ease infinite;
+
+}
+*/
+
+
+/* 
 @keyframes change {
     0% {
         top: -200%;
@@ -124,7 +134,7 @@
     100% {
         top: 25%;
     }
-}
+} */
 
 .row .card:nth-child(1) {
     background-color: #991b38;
@@ -201,8 +211,8 @@
 .row .card .content .p {
     color: rgb(250, 241, 241);
     font-family: 'lato', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.7;
     text-align: left;
