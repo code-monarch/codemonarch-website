@@ -8,121 +8,103 @@ const isServer = typeof window === "undefined";
 const WOW = !isServer ? require("wow.js") : null;
 
 const Services = () => {
-    useEffect(() => {
-    new WOW().init();
-    }, [])
+	useEffect(() => {
+		new WOW().init();
+	}, []);
 
-    return (
-			<div id='services' className={styles.container}>
-				<h3 className={`${styles.servicesTitle} ${"wow fadeIn"}`}>
-					Our Services
-				</h3>
-				<div className={styles.row}>
-					<div className={`${styles.card} ${"wow flipInY"}`}>
-						<div className={styles.content}>
-							<h2 className={styles.h2}>01</h2>
-							{/* <div className={styles.web}>
-							<Image src='/web.png' alt='web' width={40} height={40} />
-						</div> */}
-							<h3 className={styles.h3}>Web Development</h3>
-							<p className={styles.p}>
-								We create appealing graphical user interfaces and user
-								experience, scalable and reliable backends services with modern
-								technologies.
-							</p>
-						</div>
-						<Link href='/#contact'>
-							<a className={styles.a}>Get a quote</a>
-						</Link>
+	return (
+		<div id='services' className={styles.container}>
+			<h3 className={`${styles.servicesTitle} ${"wow fadeIn"}`}>
+				Our Services
+			</h3>
+			<div className={styles.row}>
+				<div className={`${styles.card} ${"wow flipInY"}`}>
+					<div className={styles.content}>
+						<h2 className={styles.h2}>01</h2>
+						<h3 className={styles.h3}>Web Development</h3>
+						<p className={styles.p}>
+							Our Services ranges from developing a simple portfolio page to complex web applications, electronic businesses,
+							web scraping, with scalable and reliable backend
+							services using modern web technologies.
+						</p>
 					</div>
-					<div className={`${styles.card} ${"wow flipInY"}`}>
-						<div className={styles.content}>
-							<h2 className={styles.h2}>02</h2>
-							{/* <div className={styles.ui_ux}>
-							<Image
-								src='/mobile.png'
-								alt='mobile app'
-								width={60}
-								height={60}
-							/>
-						</div> */}
-							<h3 className={styles.h3}>Mobile App Development</h3>
-							<p className={styles.p}>
-								From development to deployment, we build robust Android and iOS
-								apps, and where required, publish to Google Play Store and Apple
-								Store respectively.
-							</p>
-						</div>
-						<Link href='/#contact'>
-							<a className={styles.a}>Get a quote</a>
-						</Link>
+					<Link href='/#contact'>
+						<a className={styles.a}>Get a quote</a>
+					</Link>
+				</div>
+				<div className={`${styles.card} ${"wow flipInY"}`}>
+					<div className={styles.content}>
+						<h2 className={styles.h2}>02</h2>
+						<h3 className={styles.h3}>Mobile App Development</h3>
+						<p className={styles.p}>
+							From development to deployment, we build robust Android and iOS
+							apps, and where required, publish to Google Play Store and Apple
+							Store respectively.
+						</p>
 					</div>
-					<div className={`${styles.card} ${"wow flipInY"}`}>
-						<div className={styles.content}>
-							<h2 className={styles.h2}>03</h2>
-							{/* <div className={styles.jayde}>
-							<Image
-								src='/jayde logo.png'
-								alt='Jayde Creativity'
-								width={40}
-								height={40}
-							/>
-						</div> */}
-							<h3 className={styles.h3}>Graphics Design</h3>
-							<p className={styles.p}>
-								Premium consultation on decentralised applications, trustless
-								services, smart contracts and asset tokenization, cryptocurrency
-								payments integration and related solutions.
-							</p>
-						</div>
-						<Link href='/#contact'>
-							<a className={styles.a}>Get a quote</a>
-						</Link>
+					<Link href='/#contact'>
+						<a className={styles.a}>Get a quote</a>
+					</Link>
+				</div>
+				<div className={`${styles.card} ${"wow flipInY"}`}>
+					<div className={styles.content}>
+						<h2 className={styles.h2}>03</h2>
+						<h3 className={styles.h3}>Graphics Design</h3>
+						<p className={styles.p}>
+							By applying visual hierarchy and page layout techniques, we craft
+							professional visual content, interactive designs that communicates
+							instantly with clients. Logos, banners etc
+						</p>
 					</div>
-					<div className={`${styles.card} ${"wow flipInY"}`}>
-						<div className={styles.content}>
-							<h2 className={styles.h2}>04</h2>
-							{/* <div className={styles.ui_ux}>
-							<Image src='/ui_ux.png'
-								alt='ui_ux'
-								width={60}
-								height={50} />
-						</div> */}
-							<h3 className={styles.h3}>UI & UX Design</h3>
-							<p className={styles.p}>
-								Our engineers are highly skilled in home automation,
-								surveillance systems, specialized black boxes and just about
-								anything you'd need microprocessors and microcontrollers for.
-							</p>
-						</div>
-						<Link href='/#contact'>
-							<a className={styles.a}>Get a quote</a>
-						</Link>
+					<Link href='/#contact'>
+						<a className={styles.a}>Get a quote</a>
+					</Link>
+				</div>
+				<div className={`${styles.card} ${"wow flipInY"}`}>
+					<div className={styles.content}>
+						<h2 className={styles.h2}>04</h2>
+						<h3 className={styles.h3}>UI & UX Design</h3>
+						<p className={styles.p}>
+							You can count on us to deliver beautiful User Interfaces and
+							experience as well as mockups and prototypes for your next
+							project.
+						</p>
 					</div>
-					<div className={`${styles.card} ${"wow flipInY"}`}>
-						<div className={styles.content}>
-							<h2 className={styles.h2}>05</h2>
-							{/* <div className={styles.tutoring}>
-							<Image
-								src='/tutoring.png'
-								alt='tutoring development'
-								width={40}
-								height={40}
-							/>
-						</div> */}
-							<h3 className={styles.h3}>Tutoring & Career Counselling</h3>
-							<p className={styles.p}>
-								You can count on us to deliver stunning digital photography and
-								multi-dimentional graphics, as well as user interface mockups.
-							</p>
-						</div>
-						<Link href='/#contact'>
-							<a className={styles.a}>Get a quote</a>
-						</Link>
+					<Link href='/#contact'>
+						<a className={styles.a}>Get a quote</a>
+					</Link>
+				</div>
+				<div className={`${styles.card} ${"wow flipInY"}`}>
+					<div className={styles.content}>
+						<h2 className={styles.h2}>05</h2>
+						<h3 className={styles.h3}>Tutoring & Career Counselling</h3>
+						<p className={styles.p}>
+							Get high standard career advice and training from our coaches in
+							the different technology stacks, ranging from web development to
+							blockchain development.
+						</p>
 					</div>
+					<Link href='/#contact'>
+						<a className={styles.a}>Get a quote</a>
+					</Link>
+				</div>
+				<div className={`${styles.card} ${"wow flipInY"}`}>
+					<div className={styles.content}>
+						<h2 className={styles.h2}>06</h2>
+						<h3 className={styles.h3}>Shopify Themes & Applications</h3>
+						<p className={styles.p}>
+							Turn your retail store into an online store in the world's largest
+							online store. we build custom shopify themes and applications that
+							will suit your needs.
+						</p>
+					</div>
+					<Link href='/#contact'>
+						<a className={styles.a}>Get a quote</a>
+					</Link>
 				</div>
 			</div>
-		);
-}
+		</div>
+	);
+};
 
-export default Services
+export default Services;
