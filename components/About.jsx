@@ -18,7 +18,7 @@ const About = ({toggleModal}) => {
 			<div className={`${styles.AboutTitle} ${"wow fadeInUpBig"}`}>
 				<h3 className={styles.h3}>About us</h3>
 				<p className={styles.p}>
-					We're a group of experienced developers and designers skilled in
+					We're a team of experienced developers and designers skilled in
 					building / designing proven software solutions that boosts businesses
 					and promote organizational sustainability. We help in taking
 					<b> ideas </b>
