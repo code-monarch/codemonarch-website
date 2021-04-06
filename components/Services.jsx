@@ -23,7 +23,7 @@ const Services = () => {
 						<h2 className={styles.h2}>01</h2>
 						<h3 className={styles.h3}>Web Development</h3>
 						<p className={styles.p}>
-							Our Services ranges from developing a simple portfolio page to complex web applications, electronic businesses,
+							Our Services range from developing a simple portfolio page to complex web applications, electronic businesses,
 							web scraping, with scalable and reliable backend
 							services using modern web technologies.
 						</p>
