@@ -48,7 +48,7 @@
     font-size: 35px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
     .menuIcon {
         position: sticky;
         top: 0;
@@ -75,6 +75,7 @@
         padding: 20px 5px;
         transition: 0.5s;
         z-index: 50;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         background: 5px solid rgba(27, 93, 236, 0.2);
         border-radius: 0 0 20px 20px;
@@ -82,6 +83,7 @@
         overflow: hidden;
     }
     .navMenuActive {
+        background: 5px solid rgba(27, 93, 236, 0.2);
         display: flex;
         justify-content: space-between;
         position: fixed;
@@ -96,7 +98,7 @@
         transition: 0.35s;
         z-index: 50;
         backdrop-filter: blur(10px);
-        background: 5px solid rgba(27, 93, 236, 0.2);
+        -webkit-backdrop-filter: blur(10px);
         border-radius: 0 0 20px 20px;
         border-bottom: 3px solid rgba(255, 255, 255, 0.2);
         overflow: hidden;

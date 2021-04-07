@@ -160,5 +160,6 @@
     @media only screen and (max-width: 480px) {
         .row .card {
             margin-right: 0;
+            animation-delay: 0;
         }
     }
