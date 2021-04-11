@@ -53,12 +53,18 @@ export default function Home() {
 	return (
 		<div onClick={clearScreen}>
 			<Head>
-				<title> CodeMonarch </title> <link rel='icon' href='/favicon.ico ' />
-				// FACEBOOK OG TAGS
+				<title> CodeMonarch </title>
+				<link rel='icon' href='/favicon.ico ' />{" "}
 				<meta
-					property='og:url'
-					content='http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html'
-				/>
+					name='description'
+					content="We're a team of experienced developers and designers skilled in
+						building / designing proven software solutions that boosts
+						businesses and promote organizational sustainability. We help in
+						taking ideas from conception to production and improve sales by engaging more clients in your space. Join hundreds of businesses who are doing more with
+						technology. Get the product/service you desire within your budget."
+				/>{" "}
+				// FACEBOOK OG TAGS
+				<meta property='og:url' content='http://www.codemonarch.com/' />
 				<meta property='og:type' content='website' />
 				<meta property='og:title' content='CodeMonarch website' />
 				<meta
