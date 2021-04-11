@@ -8,7 +8,7 @@ const isServer = typeof window === "undefined";
 const WOW = !isServer ? require("wow.js") : null;
 
 export default function Form() {
-	// CALLING WOW JS WHEN COMPONENT MOUNT
+	// CALLING WOW JS WHEN COMPONENT MOUNTS
 useEffect(() => {
 	new WOW().init();
 }, []);
