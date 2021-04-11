@@ -58,7 +58,7 @@ export default function Home() {
 				<meta
 					name='description'
 					content="We're a team of experienced developers and designers skilled in
-						building / designing proven software solutions that boosts
+						building/designing proven software solutions that boosts
 						businesses and promote organizational sustainability. We help in
 						taking ideas from conception to production and improve sales by engaging more clients in your space. Join hundreds of businesses who are doing more with
 						technology. Get the product/service you desire within your budget."
