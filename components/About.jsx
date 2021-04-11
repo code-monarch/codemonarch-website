@@ -16,8 +16,8 @@ const About = ({toggleModal}) => {
 	return (
 		<div id='about' className={styles.container}>
 			<div className={`${styles.AboutTitle} ${"wow fadeInUpBig"}`}>
-				<h3 className={styles.h3}>About us</h3>
-				<p className={styles.p}>
+				<h3 className={`${styles.h3} ${"wow fadeInUpBig"}`}>About us</h3>
+				<p className={`${styles.p} ${"wow fadeInUpBig"}`} data-wow-delay='30ms'>
 					We're a team of experienced developers and designers skilled in
 					building / designing proven software solutions that boosts businesses
 					and promote organizational sustainability. We help in taking
@@ -30,7 +30,10 @@ const About = ({toggleModal}) => {
 					<br />
 				</p>
 
-				<span className={styles.consult} onClick={toggleModal}>
+				<span
+					className={`${styles.consult} ${"wow fadeInUpBig"}`}
+					data-wow-delay='0ms'
+					onClick={toggleModal}>
 					Get free consultation
 				</span>
 			</div>
