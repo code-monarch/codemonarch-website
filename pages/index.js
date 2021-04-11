@@ -53,7 +53,7 @@ export default function Home() {
 	return (
 		<div onClick={clearScreen}>
 			<Head>
-				<title> CodeMonarch </title>
+				<title>CodeMonarch</title>
 				<link rel='icon' href='/favicon.ico ' />{" "}
 				<meta
 					name='description'
@@ -66,10 +66,17 @@ export default function Home() {
 				// FACEBOOK OG TAGS
 				<meta property='og:url' content='http://www.codemonarch.com/' />
 				<meta property='og:type' content='website' />
-				<meta property='og:title' content='CodeMonarch website' />
+				<meta
+					property='og:title'
+					content='Web & Software devlopment company.'
+				/>
 				<meta
 					property='og:description'
-					content='We give small businesses that Enterprise feeling'
+					content="We're a team of experienced developers and designers skilled in
+						building/designing proven software solutions that boosts
+						businesses and promote organizational sustainability. We help in
+						taking ideas from conception to production and improve sales by engaging more clients in your space. Join hundreds of businesses who are doing more with
+						technology. Get the product/service you desire within your budget."
 				/>
 				<meta
 					property='og:image'
