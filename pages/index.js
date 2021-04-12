@@ -53,7 +53,7 @@ export default function Home() {
 	return (
 		<div onClick={clearScreen}>
 			<Head>
-				<title>CodeMonarch</title>
+				<title>Web & software development company | CodeMonarch</title>
 				<link rel='icon' href='/favicon.ico ' />{" "}
 				<meta
 					name='description'
@@ -68,7 +68,7 @@ export default function Home() {
 				<meta property='og:type' content='website' />
 				<meta
 					property='og:title'
-					content='Web & Software devlopment company.'
+					content='Web & Software development company.'
 				/>
 				<meta
 					property='og:description'
