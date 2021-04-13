@@ -78,7 +78,7 @@ export default function Home() {
 				/>
 				<meta
 					name='twitter:image'
-					content='https://drive.google.com/file/d/1geRdc1ChIZ6JN3DUr7jnNwBFvcjNGnvf/view?usp=sharing'
+					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
 				// FACEBOOK OG TAGS
 				<meta property='og:url' content='http://www.codemonarch.com/' />
@@ -96,7 +96,7 @@ export default function Home() {
 				/>
 				<meta
 					property='og:image'
-					content='https://drive.google.com/file/d/1geRdc1ChIZ6JN3DUr7jnNwBFvcjNGnvf/view?usp=sharing'
+					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
 				//FACEBOOK OG TAGS END
 			</Head>
