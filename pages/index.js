@@ -66,16 +66,19 @@ export default function Home() {
 				<meta name='twitter:card' content='summary_large_image' />
 				<meta name='twitter:site' content='@_jumbotron' />
 				<meta name='twitter:creator' content='@_jumbotron' />
-				<meta name='twitter:title' content='www.codemonarch.com' />
+				<meta
+					name='twitter:title'
+					content='Web development and software company.'
+				/>
 				<meta
 					name='twitter:description'
-					content="Web devlopment and software company. We're a team of experienced developers and designers skilled in
+					content="We're a team of experienced developers and designers skilled in
 						building/designing proven software solutions that boosts
 						businesses and promote organizational sustainability."
 				/>
 				<meta
 					name='twitter:image'
-					content='http://codemonarch/logo/codemonarch.jpg'
+					content='https://drive.google.com/file/d/1geRdc1ChIZ6JN3DUr7jnNwBFvcjNGnvf/view?usp=sharing'
 				/>
 				// FACEBOOK OG TAGS
 				<meta property='og:url' content='http://www.codemonarch.com/' />
