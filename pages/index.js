@@ -81,6 +81,7 @@ export default function Home() {
 					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
 				// FACEBOOK OG TAGS
+				<meta property='og:site_name' content='codeMonarch' />
 				<meta property='og:url' content='http://www.codemonarch.com/' />
 				<meta property='og:type' content='website' />
 				<meta
@@ -98,6 +99,10 @@ export default function Home() {
 					property='og:image'
 					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
+				//Size of image. Any size up to 300. Anything above 300px will not work
+				in WhatsApp
+				<meta property='og:image:width' content='300' />
+				<meta property='og:image:height' content='300' />
 				//FACEBOOK OG TAGS END
 			</Head>
 			<Banner />
