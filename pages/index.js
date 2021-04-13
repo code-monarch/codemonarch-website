@@ -68,7 +68,7 @@ export default function Home() {
 				<meta name='twitter:creator' content='@_jumbotron' />
 				<meta
 					name='twitter:title'
-					content='Web development and software company.'
+					content='Web & software development company.'
 				/>
 				<meta
 					name='twitter:description'
@@ -99,17 +99,17 @@ export default function Home() {
 					property='og:image'
 					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
-				//FACEBOOK OG TAGS END 
-				//Size of image. Any size up to 300. Anything
+				//FACEBOOK OG TAGS END //Size of image. Any size up to 300. Anything
 				above 300px will not work in WhatsApp
 				<meta
 					property='og:image'
 					itemprop='image'
 					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
-				<link
-					itemprop='thumbnailUrl'
-					href='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
+				<meta
+					property='og:image'
+					itemprop='image'
+					content='https://i.ibb.co/YWYp74d/Code-Monarch.jpg'
 				/>
 				<meta property='og:image:type' content='image/jpeg' />
 				<meta property='og:updated_time' content='updatedtime' />
