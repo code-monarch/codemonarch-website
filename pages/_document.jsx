@@ -10,14 +10,6 @@ class MyDocument extends Document {
 		return (
 			<Html lang='en'>
 				<Head>
-					<meta
-						name='description'
-						content="We're a team of experienced developers and designers skilled in
-						building/designing proven software solutions that boosts
-						businesses and promote organizational sustainability. We help in
-						taking ideas from conception to production and improve sales by engaging more clients in your space. Join hundreds of businesses who are doing more with
-						technology. Get the product/service you desire within your budget."
-					/>
 					<link
 						rel='stylesheet'
 						href='https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css'

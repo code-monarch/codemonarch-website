@@ -60,9 +60,23 @@ export default function Home() {
 					content="We're a team of experienced developers and designers skilled in
 						building/designing proven software solutions that boosts
 						businesses and promote organizational sustainability. We help in
-						taking ideas from conception to production and improve sales by engaging more clients in your space. Join hundreds of businesses who are doing more with
-						technology. Get the product/service you desire within your budget."
+						taking ideas from conception to production and improve sales by engaging more clients in your space."
 				/>{" "}
+				// TWITTER CARD
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:site' content='@_jumbotron' />
+				<meta name='twitter:creator' content='@_jumbotron' />
+				<meta name='twitter:title' content='www.codemonarch.com' />
+				<meta
+					name='twitter:description'
+					content="Web devlopment and software company. We're a team of experienced developers and designers skilled in
+						building/designing proven software solutions that boosts
+						businesses and promote organizational sustainability."
+				/>
+				<meta
+					name='twitter:image'
+					content='http://codemonarch/logo/codemonarch.jpg'
+				/>
 				// FACEBOOK OG TAGS
 				<meta property='og:url' content='http://www.codemonarch.com/' />
 				<meta property='og:type' content='website' />
@@ -75,8 +89,7 @@ export default function Home() {
 					content="We're a team of experienced developers and designers skilled in
 						building/designing proven software solutions that boosts
 						businesses and promote organizational sustainability. We help in
-						taking ideas from conception to production and improve sales by engaging more clients in your space. Join hundreds of businesses who are doing more with
-						technology. Get the product/service you desire within your budget."
+						taking ideas from conception to production and improve sales by engaging more clients in your space."
 				/>
 				<meta
 					property='og:image'
