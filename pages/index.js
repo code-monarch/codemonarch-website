@@ -96,16 +96,16 @@ export default function Home() {
 				/>
 				<meta
 					property='og:image'
-					content='http://codemonarch.com/codemonarch.jpg'
+					content='https://drive.google.com/file/d/1geRdc1ChIZ6JN3DUr7jnNwBFvcjNGnvf/view?usp=sharing'
 				/>
-				// FACEBOOK OG TAGS END
-			</Head>{" "}
+				//FACEBOOK OG TAGS END
+			</Head>
 			<Banner />
 			<DropDown
 				toggleDropdown={toggleDropdown}
 				dropMenuVisibility={dropMenuVisibility}
 				hideMenuIcon={hideMenuIcon}
-			/>{" "}
+			/>
 			<Navigation />
 			<About
 				openModal={openModal}
